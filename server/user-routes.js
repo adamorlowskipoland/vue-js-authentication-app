@@ -30,9 +30,9 @@ function createAccessToken() {
 
 // Generate Unique Identifier for the access token
 function genJti() {
-  let jti = '';
-  let possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-  for (let i = 0; i < 16; i++) {
+  var jti = '';
+  var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  for (var i = 0; i < 16; i++) {
       jti += possible.charAt(Math.floor(Math.random() * possible.length));
   }
   
